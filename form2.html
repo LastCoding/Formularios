@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.4");</script>
+<script src="js/form2.js"></script>
+<link rel="stylesheet" href="css/form2.css" />
+<title>JavaScript</title>
+
+</head>
+
+	<body>
+
+<nav>
+  <ul class="navigation">
+    <div id="li1"> 
+    	<li><a href="#" onclick="showAndHideTextarea('container','container2','container3','container4')">1 TextArea</a></li>
+    </div>
+
+     <div id="li2"> 
+    	<li id="li2"><a href="#" onclick="showAndHideTextarea('container2','container','container3','container4')">2 TextArea</a></li>
+    </div>
+
+     <div id="li3"> 
+    	<li id="li3"><a href="#" onclick="showAndHideTextarea('container3','container','container2','container4')">3 TextArea</a></li>
+    </div>
+
+     <div id="li4"> 
+    	<li id="li4"><a href="#" onclick="showAndHideTextarea('container4','container','container2','container3')">4 TextArea</a></li>
+    </div>
+  </ul>
+</nav>
+
+		<div class="input-list style-1 clearfix">
+				<div id="container">
+					<div id="boxStyle">
+						<textarea type="text" id="ta"></textarea>
+						<span id="counter"></span>
+					</div>	
+				</div>
+
+				<div id="container2">
+					<div id="boxStyle">
+						<textarea type="text" id="ta2"></textarea>
+						<span id="result"> </span>
+					</div>
+				</div>
+
+				<div id="container3">
+					<div id="boxStyle">
+						<textarea type="text" id="ta3"></textarea>
+						<span id="result2"> </span>
+					</div>
+				</div>
+
+				<div id="container4">
+					<div id="boxStyle">
+						<textarea type="text" id="ta4"></textarea>
+						<span id="result3"> </span>
+					</div>
+				</div>
+		</div>
+
+		<div id="helpButton"> <a href="#"> <img id="button" src="images/help-button.png" > </a> </div>
+		<div id="text"></div>
+
+	</body>
+</html>
